@@ -1,0 +1,44 @@
+{% extends 'main.html' %} {% block content %}
+
+<section class="tentang">
+  <div class="container">
+    <img class="ornamen" src="static/img/ornamen.png" alt="heart" />
+    <h2>Sistem Prediksi Jenis Kelamin Dari Citra Mata</h2>
+    <p class="content">Halaman ini adalah informasi terkait mengenai sistem prediksi jenis kelamin dari citra mata</p>
+    <div style="padding-top: 5px; text-align: center">
+      <img class="" src="static/img/unnes.png" alt="unnes" width="100px" />
+    </div>
+    <div>
+      <h2 style="text-align: center; padding-top: 5px">TENTANG SISTEM</h2>
+      <p class="content" style="padding-top: 10px; text-align: center">
+        Sistem ini dibuat sebagai alat uji dari skripsi yang berjudul <br />"Optimasi Algoritma Convolutional Neural Network Dengan GridSearchCV Untuk Mengklasifikasikan Jenis Kelamin Berdasarkan Citra Mata"
+        <br />
+        <br />
+        Sistem ini terdiri dari beberapa menu diantaranya adalah dashboard, prediction, accuracy, dataset, dan about. Berikut mengenai penjelasan dari masing-masing menu yang ada dalam sistem.
+      </p>
+      <div class="tentangkita">
+        <h4 class="underline" style="padding-top: 10px">Dashboard</h4>
+        <p class="content" style="text-align: justify">
+          Menu Dashboard merupakan halaman awal atau halaman utama ketika sistem dijalankan pertama kali sebagai informasi awal terhadap sistem. Menu ini berisikan judul penelitian skripsi, nama, dan nim mahasiswa, nama prodi, jurusan,
+          fakultas, dan universitas.
+        </p>
+        <h4 class="underline" style="padding-top: 10px">Dataset</h4>
+        <p class="content" style="text-align: justify">Menu dataset merupakan halaman menu yang menampilkan informasi mengenai dataset yang digunakan dalam penelitian yaitu deskripsi dataset.</p>
+        <h4 class="underline" style="padding-top: 10px">Prediction</h4>
+        <p class="content" style="text-align: justify">
+          Menu prediksi penyakit jantung merupakan halaman yang menampilkan hasil dari prediksi terhadap citra mata apakah jenis kelamin nya laki-laki atau perempuan. Pada menu ini melakukan upload gambar mata kemudian akan menunjukkan
+          apakah female atau male.
+        </p>
+        <h4 class="underline" style="padding-top: 10px">Accuracy</h4>
+        <p class="content" style="text-align: justify">
+          Menu akurasi merupakan halaman yang menampilkan hasil akurasi dari pengujian metode yang digunakan dalam penelitian. Pada menu ini terdapat hasil akurasi dari beberapa pengujian yang telah dilakukan.
+        </p>
+        <h4 class="underline" style="padding-top: 10px">About</h4>
+        <p class="content" style="text-align: justify">Menu about merupakan halaman yang menampilkan informasi atau penjelasan setiap menu yang tersedia di dalam sistem yang dibangun.</p>
+        <br />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

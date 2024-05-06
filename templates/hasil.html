@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>EyeGender Classifier</title>
+	<link rel="icon" type="image/png" href="/static/img/mata.png" />
+	<style>
+		.coverBG{
+			background-image: url("../static/img/bigi.jpg");
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+		}
+		.container-fluid{
+			text-align: center;
+			padding-top: 42px;
+			color:white;
+		}
+		.img{
+			width: 300px;
+		}
+		h1{
+			font-size: 60px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="coverBG"></div>
+	<section class="content">
+		<div class="col-md-6 offset-md-3">
+			<div class="container-fluid">
+				<h1>EyeGender Classifier</h1>
+				<h3>DDeteksi Jenis Kelamin Melalui Citra Mata</h3>
+				<h2 style="margin-top: 25px">Hasil Klasifikasi</h2>
+				<img class="img" src="{{ foto }}"></img>
+				<h4 style="margin-top: 10px; margin-bottom: 0px">Citra diklasifikasikan ke dalam kelas :</h4>
+				<h1 style="font-size: 45px">{{ hasil }}</h1>
+				<a href="/home"><button class="btn btn-danger" autofocus="on">Kembali</button></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

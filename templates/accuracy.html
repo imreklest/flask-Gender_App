@@ -1,0 +1,77 @@
+{% extends 'main.html' %} {% block content %}
+<section class="accuracy">
+    <div class="container">
+        <div id="myTabContent" class="tab-content">
+            <img class='mb-5' src="static/img/unnes.png" alt="heart" style="width: 40px;" >
+            <div class="tab-pane fade active show" id="accuracy">
+                <p class="mb-5">
+                    <p class="linu" style="font-size: 20px">Berikut adalah hasil akurasi pengujian.</p>
+                    <table class="table table" cellspacing="0", border="0px solid">
+                        <thead class="table-active">
+                            <tr class="text-center">
+                                <th>Model Klasifikasi</th>
+                                <th>Hasil Akurasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CNN Without Optimization</td>
+                                <td>53%</td>
+                            </tr>
+                            <tr class="bole">
+                                <td>CNN + GridSearchCV</td>
+                                <td>88%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + Adamax</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + SGD</td>
+                                <td>81%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + Adadelta</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + Adafactor</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + Adagrad</td>
+                                <td>81%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + AdamW</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + FTRL</td>
+                                <td>78%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + Adam</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + tf.keras.optimize.LiON</td>
+                                <td>81%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + Nadam</td>
+                                <td>82%</td>
+                            </tr>
+                            <tr>
+                                <td>CNN + RMSprop</td>
+                                <td>79%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
